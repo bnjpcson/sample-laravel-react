@@ -43,9 +43,11 @@ Duplicate the `.env.example` file and rename the copy to `.env`:
 cp .env.example .env
 ```
 
-Open the .env file and update the following database configuration lines:
+Open the .env file and update the following database configuration lines and set the port of APP_URL value to `http://localhost:8000`:
 
 ```env
+APP_URL=http://localhost:8000
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -62,7 +64,15 @@ Now, run the migration files to create the necessary database tables:
 php artisan migrate
 ```
 
-### 6. Start the Application
+### 6. Generate Application Encryption Key
+
+Now, run the command to generate new application key:
+
+```bash
+php artisan key:generate
+```
+
+### 7. Start the Application
 
 Finally, start the development server with:
 
