@@ -11,7 +11,7 @@ This guide will help you install and run the application on your local machine.
 Start by cloning the project to your local machine:
 
 ```bash
-git clone https://github.com/your-username/your-repository.git
+git clone https://github.com/bnjpcson/sample-laravel-react.git
 ```
 
 ### 2. Install Dependencies
